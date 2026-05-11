@@ -201,7 +201,7 @@ Costo di Heap-Extract-Max: $\Theta(h) = \Theta(\log(n))$
 <br>
 
 {{% callout %}}
-Tutto sommato, costi molto bassi!
+ottimo > molto buono > buono
 {{% /callout %}}
 
 {{% /section %}}
