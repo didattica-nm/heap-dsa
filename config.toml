@@ -4,7 +4,7 @@ disableKinds = ["sitemap", "RSS"]
 theme = "reveal-hugo"
 publishDir = "build"
 # TODO: Insert repo name below here!
-baseURL = "https://nickolausen.github.io/web-presentation-template/"
+baseURL = "https://nickolausenteaching.github.io/heap-dsa/"
 # Example: baseURL = "https://<github pages base url>/<repo name>/"
 
 # This forces Hugo to make all links relative to the current page

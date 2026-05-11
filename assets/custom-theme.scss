@@ -9,31 +9,29 @@
 // Fonts - consider using https://www.fonttrio.xyz/ for less effort
 
 // Headings
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
-// Body
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 // Monospace
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono');
 
-$mainFont: 'Inter', sans-serif;
-$headingFont: 'Plus Jakarta Sans';
+$mainFont: 'Titillium Web', sans-serif;
+$headingFont: 'Space Grotesk';
 $codeFont: 'JetBrains Mono';
 
 /* 
 	You may want a logo to be displayed 
 	on the bottom-left of the slides 
 */
-$logo: url("../imgs/logo-placeholder.png");
+$logo: url("../imgs/pascal-logo.png");
 
 $dark-theme: false !default;
 
 // DEFAULT COLORS: LIGHT MODE
 // Background of the presentation
-$backgroundColor: #fefefe;
+$backgroundColor: #fcfcfc;
 
 $mainFontSize: 40px;
 $mainColor: #000000;
-$accentClr: #760000;
+$accentClr: #dc7b04;
 $codeClr: $accentClr;
 
 // Callouts styling
@@ -72,7 +70,7 @@ $selectionColor: invert($backgroundColor);
 $blockMargin: 10px;
 
 // Headings
-$headingMargin: 30px 0;
+$headingMargin: 2% 0;
 $headingLineHeight: 1;
 $headingColor: $mainColor;
 $headingLetterSpacing: normal;
@@ -81,10 +79,11 @@ $headingTextShadow: none;
 $headingFontWeight: bold;
 $heading1TextShadow: $headingTextShadow;
 
-$heading1Size: 3.77em;
-$heading2Size: 2.11em;
+$heading1Size: 2.7em;
+$heading2Size: 2.00em;
 $heading3Size: 1.55em;
 $heading4Size: 1.00em;
+$heading5Size: .90em;
 
 // Links and actions
 $linkColor: lighten($accentClr, 20%);
@@ -100,43 +99,24 @@ $linkColorHover: lighten($linkColor, 20%);
 @import "reveal-js/dist/theme/template/exposer";
 
 // Override **some** bootstrap default values
-ol, ul {
-  padding-left: 0rem !important;
+ol,
+ul {
+	padding-left: 0rem !important;
 }
 
-.reveal [class*="primary"] {
-	--bs-primary: #{$accentClr};
-	--bs-primary-bg: #{$accentClr};
-	--bs-primary-rgb: #{red($accentClr)}, #{green($accentClr)}, #{blue($accentClr)};
-
-	// Buttons variable
-	--bs-btn-bg: #{$accentClr};
-	--bs-btn-border-color: #{$accentClr};
-	--bs-btn-color: #{fff};
-	--bs-btn-bg: #{$accentClr};
-	--bs-btn-border-color: #{$accentClr};
-	--bs-btn-hover-color: #{$backgroundColor};
-	--bs-btn-hover-bg: #{$accentClr};
-	--bs-btn-hover-border-color: #{$accentClr};
-	--bs-btn-focus-shadow-rgb: 49, 132, 253;
-	--bs-btn-active-color: #{$backgroundColor};
-	--bs-btn-active-bg: #{$accentClr};
-	--bs-btn-active-border-color: #{$accentClr};
-	--bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-	--bs-btn-disabled-color: #{$backgroundColor};
-	--bs-btn-disabled-bg: #{$accentClr};
-	--bs-btn-disabled-border-color: #{$accentClr};
-	color: $backgroundColor !important;
+h5 {
+	font-size: $heading5Size !important;
 }
 
-.reveal .slide-background:not(.stack) {
+.reveal .slide-background:not(.stack, [data-background-hash]) {
 	background-color: transparent;
 	// Uncomment to add bottom right logo in every slide
 	background-image: $logo;
 	background-repeat: no-repeat;
-	background-position: 1.5% 97%;
-	background-size: 15%;
+	background-position: -30% 100%;
+	background-size: 40%;
 	background-clip: border-box;
+	filter: opacity(.2) grayscale(100%);
 
 	// Uncomment to add slides border
 	// border-style: solid;
@@ -144,14 +124,18 @@ ol, ul {
 	// border-width: 0.3em;
 }
 
-.reveal .slide-background:not(:first-child, .stack):after {
-	content: "@Nickolausen";
-	position: absolute;
-	bottom: 2.5%;
-	right: 7%;
-	z-index: -1;
+.reveal .navigate-left {
+	display: flex;
+}
+
+.reveal .navigate-left::before {
+	content: "N. Magi";
+	min-width: max-content;
+	display: block;
+	align-content: center;
+	padding-right: 10px;
 	color: $accentClr;
-	font-size: .5em;
+	font-size: 2em;
 	font-family: $mainFont;
 }
 
@@ -168,11 +152,16 @@ ol, ul {
 
 .reveal section img {
 	border: 0em;
-	box-shadow: none;
 	max-width: 100%;
 	max-height: 23em;
 	height: auto;
-	object-fit: contain;
+	object-fit: cover;
+}
+
+.reveal section img:not(.exclude) {
+	border-radius: 20px;
+	border: 5px solid black;
+	box-shadow: 7.5px 7.5px 0px rgb(15, 15, 15);
 }
 
 .reveal code:not(.nohighlight) {
@@ -198,4 +187,12 @@ ol, ul {
 .reveal blockquote:hover {
 	// transition: all;
 	box-shadow: 0px 0px 20px $accentClr;
+}
+
+.reveal .mermaid svg {
+	max-width: 75% !important;
+}
+
+.reveal .callout p {
+	display: inline-block;
 }
