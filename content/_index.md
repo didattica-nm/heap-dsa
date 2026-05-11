@@ -116,7 +116,7 @@ Un albero (ADG — *Acyclic Directed Graph*) si dice binario quando il numero di
 <br>
 
 {{% callout type="warning" title="Da ricordare!" %}}
-Un **heap** è un albero binario in cui possono mancare foglie *consecutive* a partire da *destra*.
+Un **heap** è un albero binario **completo** in cui possono mancare foglie *consecutive* a partire da *destra*.
 {{% /callout %}}
 
 ---
