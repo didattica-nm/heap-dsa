@@ -21,7 +21,9 @@ La struttura dati **heap** e i suoi utilizzi.
 <br>
 
 <small>
-A cura di Nicholas Magi
+
+A cura di Nicholas Magi — `nicholas.magi[at]ispascalcomandini.it`
+
 </small>
 
 <br>
@@ -138,7 +140,7 @@ $$
 
 ---
 
-## Implementazione - navigazione
+## Utilità - navigazione
 
 ![Navigazione Heap](imgs/navigazione-heap.png)
 
