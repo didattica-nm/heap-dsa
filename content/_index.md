@@ -37,7 +37,7 @@ Overview
 
 {{% multicol %}}
 
-{{% col %}}
+{{% col class="col-9" %}}
 
 ```mermaid
 mindmap
@@ -60,7 +60,7 @@ mindmap
 ```
 {{% /col %}}
 
-{{% col %}}
+{{% col class="col-3" %}}
 {{% callout %}}
 
 Disclaimer: ce ne sono tante altre!
