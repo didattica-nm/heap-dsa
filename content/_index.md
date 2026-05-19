@@ -35,7 +35,26 @@ A cura di Nicholas Magi — `nicholas.magi[at]ispascalcomandini.it`
 Overview
 ## Strutture dati principali in C#
 
-[![](https://mermaid.ink/img/pako:eNqNkl9rwjAUxb9KuQ-i0In9q42POtjY9jAcexh9ycy1BttEYgLrSr_70uqKjirLU3LO757LJbeCtWQIBAouWEH3qXAcJaUeDh_vhSlQ0c8cR6NGdhzOqupMHuR6_jbI9Lyuj_6JWMg8x7XmUpwRjftLnbhnftA9GcdzYf61xA7ZFaBNXuH14Ad62J77l-5KKo2s32-jl7ydjKqyJZ6wdJ23d5ob7Gt2m-5r3Y31D7ZJv82-GjTYM8pK0_Wu08GFTHEGZEPzA7pg_7egzRuqpiQFvcUCUyD2ynBDTa5TcO0jp6U0-mTQTFkmFbWN21PxIWUBRCtjA5U02baLN3tGNS65LaBFpyoUDNVCGqGBeH40a1OAVPAF5G4ajieJF0ZBFPl-GHsulEBCf5wEVoq9cOIF8dSvXfhu207Gs2mYJEkUB8EkiINZ4gIyrqV6Oa57u_X1D-Mv5Ns?type=png)](https://mermaid.ai/live/edit#pako:eNqNkl9rwjAUxb9KuQ-i0In9q42POtjY9jAcexh9ycy1BttEYgLrSr_70uqKjirLU3LO757LJbeCtWQIBAouWEH3qXAcJaUeDh_vhSlQ0c8cR6NGdhzOqupMHuR6_jbI9Lyuj_6JWMg8x7XmUpwRjftLnbhnftA9GcdzYf61xA7ZFaBNXuH14Ad62J77l-5KKo2s32-jl7ydjKqyJZ6wdJ23d5ob7Gt2m-5r3Y31D7ZJv82-GjTYM8pK0_Wu08GFTHEGZEPzA7pg_7egzRuqpiQFvcUCUyD2ynBDTa5TcO0jp6U0-mTQTFkmFbWN21PxIWUBRCtjA5U02baLN3tGNS65LaBFpyoUDNVCGqGBeH40a1OAVPAF5G4ajieJF0ZBFPl-GHsulEBCf5wEVoq9cOIF8dSvXfhu207Gs2mYJEkUB8EkiINZ4gIyrqV6Oa57u_X1D-Mv5Ns)
+```mermaid
+
+mindmap
+  root((IEnumerable))
+    id{{IEnumerable&lt;T&gt;}}
+      id{{ICollection&lt;T&gt;}}    
+        id{{IList&lt;T&gt;}}
+            List&lt;T&gt;
+            LinkedList&lt;T&gt;
+        id{{ISet&lt;T&gt;}}
+            HashSet&lt;T&gt;
+            SortedSet&lt;T&gt;
+        id{{IDictionary&lt;TKey, TValue&gt;}}
+            Dictionary&lt;TKey, TValue&gt;
+            SortedList&lt;TKey, TValue&gt;
+            SortedDict&lt;TKey, TValue&gt;
+        Queue&lt;T&gt;
+        Stack&lt;T&gt;
+
+```
 
 <br>
 
