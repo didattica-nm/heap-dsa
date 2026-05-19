@@ -35,7 +35,7 @@ A cura di Nicholas Magi — `nicholas.magi[at]ispascalcomandini.it`
 Overview
 ## Strutture dati principali in C#
 
-{{% multicol %}}
+{{% multicol class="px-5" %}}
 
 {{% col class="col-9" %}}
 
