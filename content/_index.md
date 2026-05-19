@@ -38,13 +38,8 @@ Overview
 {{% multicol %}}
 
 {{% col %}}
-```mermaid
----
-config:
-  layout: dagre
-  theme: light
----
 
+```mermaid
 mindmap
   root((IEnumerable))
     id{{IEnumerable&lt;T&gt;}}

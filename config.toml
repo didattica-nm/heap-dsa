@@ -63,6 +63,7 @@ startOnLoad = true
 theme = "default"
 fontFamily = "Inconsolata"
 useMaxWidth = true
+layout = "dagre"
 
 # gitGraph options break the image generation
 # [params.reveal_hugo.mermaid.gitGraph]
