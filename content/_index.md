@@ -35,7 +35,15 @@ A cura di Nicholas Magi — `nicholas.magi[at]ispascalcomandini.it`
 Overview
 ## Strutture dati principali in C#
 
+{{% multicol %}}
+
+{{% col %}}
 ```mermaid
+---
+config:
+  layout: dagre
+  theme: light
+---
 
 mindmap
   root((IEnumerable))
@@ -55,14 +63,17 @@ mindmap
         Stack&lt;T&gt;
 
 ```
+{{% /col %}}
 
-<br>
-
+{{% col %}}
 {{% callout %}}
 
 Disclaimer: ce ne sono tante altre!
 
 {{% /callout %}}
+{{% /col %}}
+
+{{% /multicol %}}
 
 ---
 
