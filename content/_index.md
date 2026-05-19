@@ -60,7 +60,7 @@ mindmap
 ```
 {{% /col %}}
 
-{{% col class="col-3" %}}
+{{% col class="col-3 d-flex align-items-center justify-content-center" %}}
 {{% callout %}}
 
 Disclaimer: ce ne sono tante altre!
