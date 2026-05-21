@@ -236,6 +236,13 @@ ottimo > molto buono > buono
 ---
 
 {{% section %}}
+
+{{% multicol %}}
+{{% col %}}
+<img class="w-75" src="imgs/queue.png"/>
+{{% /col %}}
+
+{{% col class="d-flex flex-column justify-content-center" %}}
 ## Priority Queues
 
 Strutture dati che contengono elementi a cui è associata una **chiave numerica**.
@@ -244,6 +251,9 @@ Le code a priorità supportano le seguenti operazioni:
 - trovare il massimo (*minimo*)
 - estrarre il massimo (*minimo*)
 - inserire una chiave nella coda
+{{% /col %}}
+
+{{% /multicol %}}
 
 ---
 
