@@ -205,6 +205,14 @@ Costo di Heap-Increase-Key: $\Theta(h) = \Theta(\log(n))$
 
 ---
 
+### 04. Inserire una chiave
+
+![Max Heap Insert](imgs/max-heap-insert.png)
+
+Costo di Max-Heap-Insert: $\Theta(h) = \Theta(\log(n))$
+
+---
+
 ### 03. Estrarre il numero massimo(*minimo*)
 
 ![Heap extract max](imgs/extract-max.png)
@@ -212,6 +220,7 @@ Costo di Heap-Increase-Key: $\Theta(h) = \Theta(\log(n))$
 Costo di Heap-Extract-Max: $\Theta(h) = \Theta(\log(n))$
 
 ---
+
 
 ## Sintesi dei costi
 
