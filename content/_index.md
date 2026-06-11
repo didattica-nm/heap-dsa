@@ -299,7 +299,7 @@ Le code a priorità supportano le seguenti operazioni:
 
 ---
 
-## Bibligrafia
+## Bibliografia
 
 [1] Appunti (rivisitati) del prof. Luciano Margara, corso di *Algoritmi e Strutture Dati*, LT. Ingegneria e Scienze Informatiche, Università di Bologna — Campus di Cesena.
 
